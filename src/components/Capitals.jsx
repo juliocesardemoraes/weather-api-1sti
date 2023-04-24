@@ -5,8 +5,9 @@ import CapitalList from "./CapitalList";
 export default function Capitals() {
   const [capitalsWeather, setCapitalsWeather] = useState(null);
 
-  const url =
-    "http://api.weatherapi.com/v1/forecast.json?key=7fd89369164a44f29d4113450230402";
+  const url = `http://api.weatherapi.com/v1/forecast.json?key=${
+    import.meta.env.VITE_API_KEY
+  }`;
 
   useEffect(() => {
     const fetchCapitals = async () => {

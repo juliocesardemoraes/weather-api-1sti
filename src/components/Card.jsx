@@ -36,8 +36,9 @@ export default function Card({
 
   useEffect(() => {
     if (renderCardContent === true) {
-      const url =
-        "http://api.weatherapi.com/v1/forecast.json?key=7fd89369164a44f29d4113450230402&lang=pt";
+      const url = `http://api.weatherapi.com/v1/forecast.json?key=${
+        import.meta.env.VITE_API_KEY
+      }&lang=pt`;
       const fetchCity = async () => {
         const response = await fetch(`${url}&q=${cityName}`);
         const jsonData = await response?.json();
