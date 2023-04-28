@@ -5,13 +5,13 @@ export default function CapitalList({ capitals }) {
     <div className="capitals">
       <ul className="capitals__list">
         <div className="empty"></div>
-        <li className="max">max</li>
-        <li className="min">min</li>
+        <li className="max">min</li>
+        <li className="min">max</li>
       </ul>
       <ul className="capitals__list">
         <div className="empty"></div>
-        <li className="max">max</li>
-        <li className="min">min</li>
+        <li className="max">min</li>
+        <li className="min">max</li>
       </ul>
       {capitals?.map((item, index) => {
         return (
