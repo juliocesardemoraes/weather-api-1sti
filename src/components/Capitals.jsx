@@ -39,6 +39,7 @@ export default function Capitals() {
         "São Paulo",
         "Aracaju",
         "Palmas",
+        "Paris",
       ];
       const promises = [];
 
